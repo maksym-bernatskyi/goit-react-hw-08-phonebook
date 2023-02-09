@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import { getFilter } from "components/Redux/contactsSlice";
-import { useGetContactsQuery, useDeleteContactMutation } from "components/Redux/contactsApi";
+import { getFilter } from "Redux/contacts/contactsSlice";
+import { useGetContactsQuery, useDeleteContactMutation } from "Redux/contacts/contactsApi";
 import { ContainerList, Title, Wrapper, Item, ButtonClose, TextList } from "./ContactList.styled";
 import { TailSpin } from "react-loader-spinner";
 

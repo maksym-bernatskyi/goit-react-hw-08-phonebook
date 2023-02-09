@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useGetContactsQuery, useCreateContactMutation } from 'components/Redux/contactsApi';
+import { useGetContactsQuery, useCreateContactMutation } from 'Redux/contacts/contactsApi';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import Input from 'components/Input';
