@@ -6,13 +6,16 @@ export const ContainerInput = styled.div`
 
 export const Label = styled.h2`
     text-align: center;
-    font-size: 20px;
-    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 10px;
 `;
 
 export const InputInner = styled.input`
     padding: 5px;
     border: none;
     border-radius: 5px;
-    width: 230px;
+    min-width: 280px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 23px 9px rgba(0, 0, 0, 0.2);
 `;
