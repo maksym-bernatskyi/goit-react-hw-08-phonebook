@@ -7,7 +7,7 @@ import ContactList from "components/ContactList";
 import Filter from "components/Filter";
 
 const ContactsPage = () => {
-    const { data, isFetching } = useGetContactsQuery();
+    const { data } = useGetContactsQuery();
     const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
     return (
         <Container>
