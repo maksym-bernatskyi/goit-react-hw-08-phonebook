@@ -40,7 +40,7 @@ const register = createAsyncThunk("auth/register", async (credentials) => {
 
 // User LogIn
 
-const LogIn = createAsyncThunk("auth/login", async (credentials) => {
+const logIn = createAsyncThunk("auth/login", async (credentials) => {
     try {
         const { data } = await axios.post("/users/login", credentials);
         token.set(data.token);
@@ -98,7 +98,7 @@ const fetchCurrentUser = createAsyncThunk("auth/refresh", async (_, thunkAPI) =>
 
 const operations = {
     register,
-    LogIn,
+    logIn,
     logOut,
     fetchCurrentUser,
 };
